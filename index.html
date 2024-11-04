@@ -3,51 +3,25 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SALUTEM</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>SALUTEM - Inicia Sesión</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
   </head>
 
-  <body>
+<body>
     <div id="loader">
-      <img src="salutem.png" alt="Loader">
+        <img src="salutem.png" alt="Loader"></img>
     </div>
-    <div class="container">
-      <h1>Calculadora IMC</h1>
-      <div id="calculator">
-	<input type="number" id="weight" placeholder="Peso (kg)">
-	<input type="number" id="height" placeholder="Altura (cm)">
-	<button onclick="calculate()">Calcular IMC </button>
-    </div>
-    <div id="result"></div>
 
-    <table>
-      <thead>
-	<tr>
-	  <th>Rango de IMC</th>
-	  <th>Estado</th>
-	</tr>
-      </thead>
-      <tbody>
-	<tr>
-	  <td>Menos de 18.5</td>
-	  <td>Peso Bajo</td>
-	</tr>
-	<tr>
-	  <td>18.5 - 24.9</td>
-	  <td>Peso Normal</td>
-	</tr>
-	<tr>
-	  <td>25 - 29.9</td>
-	  <td>Sobrepeso</td>
-	</tr>
-	<tr>
-	  <td>30 o Mas</td>
-	  <td>Obesidad</td>
-	</tr>
-      </tbody>
-    </table>
-    <h3 id="advice"></h3>
+    <div class="container">
+		<h1>BIENVENIDO A SALUTEM</h1>
+        <h2>Tu salud es nuestra prioridad</h2>
+        <h3>¿Deseas iniciar sesion o registrarte?</h3>
+
+		<nav class="navigation">
+			<button onclick="window.location.href='register.html'">Registrarse</button>
+			<button onclick="window.location.href='login.html'">Ingresar</button>
+		</nav>
     </div>
-    <script src="main.js"></script>
-  </body>
+    <script src="loader.js"></script>
+    </body>
 </html>

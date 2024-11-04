@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALUTEM</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+        /* Estilos opcionales para centrar el formulario */
+        .login {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Altura completa de la ventana */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <form name='form-login' onsubmit="return false;"> <!-- Evita el envío del formulario por defecto -->
+            <h1>INGRESAR</h1>
+
+            <label for="userName">Email</label>
+            <input type="email" id="userName" placeholder="Username" required>
+
+            <label for="userPw">Contraseña</label>
+            <input type="password" id="userPw" placeholder="Password" required>
+
+            <div id="remember">
+                <input type="checkbox" value="lsRememberMe" id="rememberMe" style="display: inline-block;">
+                <label>Recuérdame</label>
+            </div>
+
+            <input id="login_btn" type="submit" value="Login" onclick="check()">
+        </form>
+    </div>
+
+    <script src="auth.js"></script>
+
+</body>
+</html>

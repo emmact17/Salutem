@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALUTEM</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+        /* Estilos para centrar el botón */
+        .redirect {
+            display: flex;
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+            margin-top: 20px; /* Espacio superior */
+
+        }
+
+        /* Opcional: Estilos para el botón */
+        .redirect button {
+            padding: 10px 20px; /* Espaciado interno */
+            font-size: 16px; /* Tamaño de fuente */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+            border: none; /* Sin borde */
+            background-color:#192134; /* Color de fondo */
+            color: white; /* Color del texto */
+            border-radius: 5px; /* Bordes redondeados */
+            transition: background-color 0.3s; /* Transición para el color de fondo */
+            width: auto;
+        }
+
+        .redirect button:hover {
+            background-color: #0056b3; /* Color de fondo al pasar el mouse */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <form name='form-login' onsubmit="return false;"> <!-- Evita el envío del formulario para propósitos de demostración -->
+            <h1>REGISTRARSE</h1>
+
+            <label for="name">Email</label>
+            <input type="email" id="name" placeholder="Username" required>
+
+            <label for="pw">Contraseña</label>
+            <input type="password" id="pw" placeholder="Password" required>
+
+            <ul class="helper-text">
+                <li class="length">Debe tener al menos 8 caracteres.</li>
+                <li class="lowercase">Debe contener una letra minúscula.</li>
+                <li class="uppercase">Debe contener una letra mayúscula.</li>
+                <li class="special">Debe contener un número o carácter especial.</li>
+            </ul>
+            <input id="rgstr_btn" type="submit" value="Register" onclick="store()">
+        </form>
+    </div>
+
+    <!-- Botón que redirige a login.html -->
+    <div class="redirect">
+        <button onclick="window.location.href='login.html'">Ir a Ingresar</button>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
